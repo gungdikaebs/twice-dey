@@ -9,3 +9,7 @@
     --secondary-color: #ffffff;
     --desc-color: #808080;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
