@@ -4,7 +4,8 @@ const Navbar = () => {
   return (
     <section className="Navbar">
       <div className="container-navbar">
-        <h1>wdwajdjawjo</h1>
+        <div className="left">Twice Dey</div>
+        <div className="right"></div>
       </div>
     </section>
   );
