@@ -1,0 +1,11 @@
+.container-hero {
+    width: 80%;
+    display: flex;
+    /* justify-content: center; */
+    border: 1px solid;
+    margin-top: 2rem;
+    padding: 10rem;
+    margin: auto;
+}
+
+.container-hero .left {}
