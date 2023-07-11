@@ -1,0 +1,19 @@
+.container-mostpicked{
+  width: 80%;
+    display: flex;
+    /* justify-content: center; */
+    /* border: 10px solid; */
+    margin-top: 2rem;
+    padding-top: 3rem;
+    margin: auto;
+}
+
+.container-mostpicked .title{
+  color: var(--primary-color);
+}
+
+.container-mostpicked .image{
+  margin: 1rem 0;
+  width: 25rem;
+  height: 28rem;
+}
