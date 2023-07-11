@@ -14,7 +14,7 @@
 }
 
 .container-hero .left {
-    width: 35%;
+    width: 40%;
 }
 .container-hero .left .title {
     color: var(--primary-color);
@@ -26,17 +26,16 @@
     width: 80%;
 }
 .container-hero .left .hero-icons {
+    margin-top: 3.5rem;
     display: flex;
-    /* justify-content: space-around; */
-    align-items: center;
-    gap: 25%;
+    justify-content: space-between;
+    /* align-items: center; */
 }
 .container-hero .left .hero-icons .desc {
-    max-width: 5rem;
+    /* max-width: 5rem; */
+    width: 100%;
     text-align: center;
 }
-
-
 .container-hero .right .hero-image{
-    max-width: 350px;
+    max-width: 500px;
 }

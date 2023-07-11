@@ -18,15 +18,33 @@ const Hero = () => {
           </button>
           <div className="hero-icons">
             <div className="traveler-icon">
-              <BiUserPin/>
+              <BiUserPin
+              style={{
+                width: "100%",
+                height: "40",
+                color: "var(--primary-color)",
+              }}
+              />
             <p className="desc">80.409 travelers</p>
             </div>
             <div className="cities-icon">
-              <BiMap/>
+              <BiMap
+              style={{
+                width: "100%",
+                height: "40",
+                color: "var(--primary-color)",
+              }}
+              />
             <p className="desc">1.493 cities</p>
             </div>
             <div className="treasure-icon">
-              <BiCamera/>
+              <BiCamera
+              style={{
+                width: "100%",
+                height: "40",
+                color: "var(--primary-color)",
+              }}
+              />
             <p className="desc">238 treasure</p>
             </div>
           </div>
