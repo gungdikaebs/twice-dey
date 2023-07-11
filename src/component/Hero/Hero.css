@@ -27,10 +27,13 @@
 }
 .container-hero .left .hero-icons {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 25%;
 }
 .container-hero .left .hero-icons .desc {
     max-width: 5rem;
+    text-align: center;
 }
 
 
