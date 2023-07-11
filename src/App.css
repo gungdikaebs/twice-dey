@@ -8,8 +8,20 @@
     --primary-color: #001D6E;
     --secondary-color: #ffffff;
     --desc-color: #808080;
+    --button-color: #3E54AC;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+.button {
+    font-weight: 700;
+    padding: 15px 40px 15px 40px;
+    margin: 2rem 0;
+    border: none;
+
+    box-shadow: 1px 1px 10px var(--desc-color);
+    color: white;
+    background-color: var(--button-color);
 }

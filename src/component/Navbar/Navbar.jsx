@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="container-navbar">
         <div className="content">
           <div className="left">
-            Twice <span>Dey</span>
+            TWICE <span>DEY</span>
           </div>
           <div className="right">
             <div className="text">
