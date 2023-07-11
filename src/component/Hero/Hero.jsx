@@ -9,7 +9,7 @@ const Hero = () => {
           <h1 className="title">Forget Busy Work, Start Next vacation</h1>
           <p>
             We provide what you need to enjoy your holiday with family time to
-            make another memorable moments.
+            make another memorable moments. test
           </p>
         </div>
         <div className="right"></div>
