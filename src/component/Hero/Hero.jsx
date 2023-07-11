@@ -13,21 +13,19 @@ const Hero = () => {
             We provide what you need to enjoy your holiday with family time to
             make another memorable moments.
           </p>
-          <button className="button">
-            Show Me Now
-          </button>
+          <button className="button">Show Me Now</button>
           <div className="hero-icons">
             <div className="traveler-icon">
-              <BiUserPin/>
-            <p className="desc">80.409 travelers</p>
+              <BiUserPin />
+              <p className="desc">80.409 travelers</p>
             </div>
             <div className="cities-icon">
-              <BiMap/>
-            <p className="desc">1.493 cities</p>
+              <BiMap />
+              <p className="desc">1.493 cities</p>
             </div>
             <div className="treasure-icon">
-              <BiCamera/>
-            <p className="desc">238 treasure</p>
+              <BiCamera />
+              <p className="desc">238 treasure</p>
             </div>
           </div>
         </div>
