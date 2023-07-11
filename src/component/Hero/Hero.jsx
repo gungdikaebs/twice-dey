@@ -13,39 +13,38 @@ const Hero = () => {
             We provide what you need to enjoy your holiday with family time to
             make another memorable moments.
           </p>
-          <button className="button">
-            Show Me Now
-          </button>
+          <button className="button">Show Me Now</button>
           <div className="hero-icons">
             <div className="traveler-icon">
-              <BiUserPin
-              style={{
-                width: "100%",
-                height: "40",
-                color: "var(--primary-color)",
-              }}
+              <BiUserPins
+                style={{
+                  width: "100%",
+                  height: "40",
+                  color: "var(--primary-color)",
+                }}
               />
-            <p className="desc">80.409 travelers</p>
+              <p className="desc">80.409 travelers</p>
             </div>
             <div className="cities-icon">
               <BiMap
-              style={{
-                width: "100%",
-                height: "40",
-                color: "var(--primary-color)",
-              }}
+                style={{
+                  width: "100%",
+                  height: "40",
+                  color: "var(--primary-color)",
+                }}
               />
-            <p className="desc">1.493 cities</p>
+              <p className="desc">1.493 cities</p>
             </div>
             <div className="treasure-icon">
               <BiCamera
-              style={{
-                width: "100%",
-                height: "40",
-                color: "var(--primary-color)",
-              }}
+                style={{
+                  width: "100%",
+                  height: "40",
+                  color: "var(--primary-color)",
+                }}
               />
-            <p className="desc">238 treasure</p>
+              <p className="desc">238 treasure</p>
+
             </div>
           </div>
         </div>
