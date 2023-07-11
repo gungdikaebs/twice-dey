@@ -16,7 +16,7 @@ const Hero = () => {
           <button className="button">Show Me Now</button>
           <div className="hero-icons">
             <div className="traveler-icon">
-              <BiUserPins
+              <BiUserPin
                 style={{
                   width: "100%",
                   height: "40",
