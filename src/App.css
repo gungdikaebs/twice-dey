@@ -18,10 +18,15 @@ body {
 .button {
     font-weight: 700;
     padding: 15px 40px 15px 40px;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     border: none;
 
     box-shadow: 1px 1px 10px var(--desc-color);
     color: white;
     background-color: var(--button-color);
 }
+
+/* nyoba biar mostpickednya mau kesamping */
+/* .container-mostpicked .content{
+    display: flex;
+} */
