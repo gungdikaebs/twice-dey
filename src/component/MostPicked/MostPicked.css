@@ -13,7 +13,7 @@
   color: var(--primary-color);
 }
 
-.container-mostpicked .image{
+.container-mostpicked .mostpicked-images .image{
   margin: 1rem 0;
   width: 25rem;
   height: 28rem;

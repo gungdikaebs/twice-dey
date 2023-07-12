@@ -16,7 +16,7 @@ const MostPicked = () => {
             ({ id, title, description, image, price, star, wishlist }) => (
             <div className="mostpicked-images" id="mostPickedHover" key={id}>
               <img className="image" src={image} alt="img" />
-              <div className="desc">
+              <div className="description">
                 <h2 className="title">{title}</h2>
                 <p className="desc">{description}</p>
                 <h2 className="price">Rp.{price}</h2>
