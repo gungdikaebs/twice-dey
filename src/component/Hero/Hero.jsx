@@ -16,7 +16,8 @@ const Hero = () => {
           <button className="button">Show Me Now</button>
           <div className="hero-icons">
             <div className="icons">
-              <BiUserPin className="icon"
+              <BiUserPin
+                className="icon"
                 style={{
                   width: "100%",
                   height: "40",
@@ -26,7 +27,8 @@ const Hero = () => {
               <p className="desc">80.409 travelers</p>
             </div>
             <div className="icons">
-              <BiMap className="icon"
+              <BiMap
+                className="icon"
                 style={{
                   width: "100%",
                   height: "40",
@@ -36,7 +38,8 @@ const Hero = () => {
               <p className="desc">1.493 cities</p>
             </div>
             <div className="icons">
-              <BiCamera className="icon"
+              <BiCamera
+                className="icon"
                 style={{
                   width: "100%",
                   height: "40",
@@ -44,7 +47,6 @@ const Hero = () => {
                 }}
               />
               <p className="desc">238 treasure</p>
-
             </div>
           </div>
         </div>
