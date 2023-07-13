@@ -1,6 +1,6 @@
 .container-mostpicked{
-  width: 80%;
-    display: flex;
+    width: 80%;
+    /* display: flex; */
     /* justify-content: center; */
     /* border: 10px solid; */
     margin-top: 2rem;
@@ -15,6 +15,7 @@
 
 .container-mostpicked .mostpicked-images .image{
   margin: 1rem 0;
-  width: 25rem;
-  height: 28rem;
+  width: 80%;
+  /* width: 28rem; */
+  /* height: 28rem; */
 }

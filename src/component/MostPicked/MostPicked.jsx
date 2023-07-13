@@ -1,19 +1,35 @@
 import React from "react";
 import "./MostPicked.css";
-import { BiUser } from "react-icons/bi";
 import { MostPickedData } from "../../constants/constants";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+// import required modules
+import { Pagination } from 'swiper/modules';
 
 
 
 const MostPicked = () => {
   return (
-
     <section className="mostpicked">
       <div className="container-mostpicked">
-        <div className="content">
           <h3 className="title">Most Picked</h3>
+          <Swiper 
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="Swiper-MostPicked"
+          >
+        <div className="content">
           {MostPickedData.map(
             ({ id, title, description, image, price, star, wishlist }) => (
+              <SwiperSlide>
             <div className="mostpicked-images" id="mostPickedHover" key={id}>
               <img className="image" src={image} alt="img" />
               <div className="description">
@@ -23,9 +39,11 @@ const MostPicked = () => {
                 <button className="button">Book Now</button>
               </div>
             </div>
+            </SwiperSlide>
             )
             )}
         </div>
+        </Swiper>
       </div>
     </section>
   );
