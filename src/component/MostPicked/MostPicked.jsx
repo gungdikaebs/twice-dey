@@ -22,6 +22,7 @@ const MostPicked = () => {
           spaceBetween={50}
           slidesPerView={3}
           navigation
+          loop={true}
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
           onSwiper={(swiper) => console.log(swiper)}

@@ -19,3 +19,8 @@
   /* width: 28rem; */
   /* height: 28rem; */
 }
+
+.swiper-button-prev {
+  position: absolute;
+  left: 10px;
+}
