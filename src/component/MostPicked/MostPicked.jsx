@@ -36,11 +36,13 @@ const MostPicked = () => {
                     id="mostPickedHover"
                     key={id}>
                     <img className="image" src={image} alt="img" />
-                    <div className="description">
-                      <h2 className="title">{title}</h2>
-                      <p className="desc">{description}</p>
-                      <h2 className="price">Rp.{price}</h2>
-                      <button className="button">Book Now</button>
+                    <div className="container-description">
+                      <div className="description">
+                        <h2 className="title">{title}</h2>
+                        <p className="desc">{description}</p>
+                        <h2 className="price">Rp.{price}</h2>
+                        <button className="button">Book Now</button>
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>
