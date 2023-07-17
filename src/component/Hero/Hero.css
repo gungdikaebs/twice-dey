@@ -18,11 +18,13 @@
     color: var(--primary-color);
     font-weight: 700;
     font-size: 2.5rem;
+    cursor: default;
 }
 
 .container-hero .left .desc {
     color: var(--desc-color);
     width: 80%;
+    cursor: default;
 }
 
 .container-hero .left .hero-icons {
@@ -43,4 +45,5 @@
     width: 100%;
     height: 40%;
     color: var(--primary-color);
+    cursor: pointer;
 }

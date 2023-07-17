@@ -2,7 +2,7 @@ import "./App.css";
 import Hero from "./component/Hero/Hero";
 import MostPicked from "./component/MostPicked/MostPicked";
 import Navbar from "./component/Navbar/Navbar";
-import Fasilities from "./component/Fasilities/Fasilities";
+import Facilities from "./component/Facilities/Facilities";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <Hero />
       <MostPicked/>
-      <Fasilities/>
+      <Facilities/>
     </>
   );
 }

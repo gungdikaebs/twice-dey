@@ -1,22 +1,22 @@
 import React from "react";
-import "./Fasilities.css";
+import "./Facilities.css";
 import { BiDish, BiSpa, BiBook, BiStoreAlt, BiDrink } from "react-icons/bi";
 
 
-const Fasilities = () => {
+const Facilities = () => {
     return (
-        <section className="fasilities">
-            <div className="container-fasilities">
+        <section className="facilities">
+            <div className="container-facilities">
                 <div className="wrapper">
-                    <h2 className="title">Fasilities</h2>
-                    <div className="fasility-icons">
+                    <h2 className="title">Facilities</h2>
+                    <div className="facility-icons">
                         <div className="icons">
                             <BiDish className="icon"/>
                             <p className="desc">Restaurant</p>
                         </div>
                         <div className="icons">
                             <BiSpa className="icon"/>
-                            <p className="desc">SPA</p>
+                            <p className="desc">Spa</p>
                         </div>
                         <div className="icons">
                             <BiBook className="icon"/>
@@ -37,4 +37,4 @@ const Fasilities = () => {
     );
 };
 
-export default Fasilities;
+export default Facilities;

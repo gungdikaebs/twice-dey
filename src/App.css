@@ -25,12 +25,18 @@ body {
     box-shadow: 1px 1px 10px var(--desc-color);
     color: white;
     background-color: var(--button-color);
+
+    cursor: pointer;
+    transition: all 0.3s;
 }
 .button:hover {
-    color: rgb(185, 185, 185);
-    background-color: #253471;
+    color:white;
+    background-color: #0827a1;
+    /* color: rgb(185, 185, 185);
+    background-color: #253471; */
 
     box-shadow: 1px 1px 8px var(--desc-color);
-    transition: ease-in 0.1s;
+    transition: ease-in 0.3s;
+
 }
 
