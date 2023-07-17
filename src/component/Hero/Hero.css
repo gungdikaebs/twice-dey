@@ -1,10 +1,7 @@
 .container-hero {
     width: 80%;
     display: flex;
-    /* justify-content: center; */
-    /* border: 1px solid; */
-    margin-top: 2rem;
-    padding-top: 3rem;
+    padding: 2rem 0;
     margin: auto;
 }
 
@@ -29,14 +26,13 @@
 }
 
 .container-hero .left .hero-icons {
-    margin-top: 3.5rem;
+    margin-top: 3rem;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    height: auto;
 }
 
 .container-hero .left .hero-icons .desc {
-    /* max-width: 5rem; */
     width: 100%;
     text-align: center;
 }

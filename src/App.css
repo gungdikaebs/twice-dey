@@ -20,9 +20,17 @@ body {
     padding: 15px 40px 15px 40px;
     margin: 1.5rem 0;
     border: none;
+    border-radius: 3px;
 
     box-shadow: 1px 1px 10px var(--desc-color);
     color: white;
     background-color: var(--button-color);
+}
+.button:hover {
+    color: rgb(185, 185, 185);
+    background-color: #253471;
+
+    box-shadow: 1px 1px 8px var(--desc-color);
+    transition: ease-in 0.1s;
 }
 

@@ -5,7 +5,7 @@ import hero_img from "../../assets/hero_img.png";
 
 const Hero = () => {
   return (
-    <section className="Hero">
+    <section className="hero">
       <div className="container-hero">
         <div className="left">
           <h1 className="title">Forget Busy Work, Start Next vacation</h1>
@@ -16,36 +16,15 @@ const Hero = () => {
           <button className="button">Show Me Now</button>
           <div className="hero-icons">
             <div className="icons">
-              <BiUserPin
-                className="icon"
-                style={{
-                  width: "100%",
-                  height: "40",
-                  color: "var(--primary-color)",
-                }}
-              />
+              <BiUserPin className="icon"/>
               <p className="desc">80.409 travelers</p>
             </div>
             <div className="icons">
-              <BiMap
-                className="icon"
-                style={{
-                  width: "100%",
-                  height: "40",
-                  color: "var(--primary-color)",
-                }}
-              />
+              <BiMap className="icon"/>
               <p className="desc">1.493 cities</p>
             </div>
             <div className="icons">
-              <BiCamera
-                className="icon"
-                style={{
-                  width: "100%",
-                  height: "40",
-                  color: "var(--primary-color)",
-                }}
-              />
+              <BiCamera className="icon"/>
               <p className="desc">238 treasure</p>
             </div>
           </div>

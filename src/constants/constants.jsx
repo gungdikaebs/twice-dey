@@ -53,4 +53,4 @@ export const MostPickedData = [
     wishlist: "",
     id: 5,
 }
-]
+];

@@ -6,19 +6,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+// import "swiper/css/pagination";
+// import "swiper/css/scrollbar";
 
 // import required modules
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 
 const MostPicked = () => {
   return (
     <section className="mostpicked">
       <div className="container-mostpicked">
-        <h3 className="title">Most Picked</h3>
+        <h2 className="title">Most Picked</h2>
         <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          modules={[Navigation]}
           spaceBetween={50}
           slidesPerView={3}
           navigation

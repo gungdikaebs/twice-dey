@@ -1,0 +1,47 @@
+.container-fasilities {
+    width: 80%;
+    padding: 2rem 0;
+    margin: auto;
+    overflow-x: hidden;
+  }
+  .container-fasilities .wrapper {
+    border: 3px solid var(--primary-color);
+    border-radius: 30px;
+  }
+
+  .container-fasilities .title {
+    color: var(--primary-color);
+    text-align: center;
+    margin: 2rem;
+  }
+
+
+  /* start style icons */
+  .container-fasilities .fasility-icons {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 2rem;
+  }
+  .container-fasilities .fasility-icons .icons {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  .container-fasilities .fasility-icons .icon {
+    width: 5rem;
+    height: auto;
+    padding: 1rem;
+
+    box-shadow: 1px 3px 3px var(--desc-color);
+    border-radius: 20px;
+
+    color: var(--primary-color);
+    background-color: #ECF6FF;
+  }
+  .container-fasilities .fasility-icons .icon:hover {
+    transition: ease-in 0.1s;
+    color: white;
+    background-color: var(--primary-color);
+  }
+  /* end style icons */
+
