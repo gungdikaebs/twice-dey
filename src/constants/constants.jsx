@@ -54,3 +54,22 @@ export const MostPickedData = [
     id: 5,
 }
 ];
+
+export const RecommendImages = [
+    {
+        image: "./images/recommend-img.png",
+        id: 0
+    },
+    {
+        image: "./images/recommend-img.png",
+        id: 1
+    },
+    {
+        image: "./images/recommend-img.png",
+        id: 2
+    },
+    {
+        image: "./images/recommend-img.png",
+        id: 3
+    }
+]

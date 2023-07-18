@@ -9,6 +9,7 @@
     --secondary-color: #ffffff;
     --desc-color: #808080;
     --button-color: #3E54AC;
+    --search-color: #B1AFFF;
 }
 
 body {
@@ -31,7 +32,8 @@ body {
 }
 .button:hover {
     color:white;
-    background-color: #0827a1;
+    /* background-color: #0827a1; */
+    background-color: var(--primary-color);
     /* color: rgb(185, 185, 185);
     background-color: #253471; */
 
