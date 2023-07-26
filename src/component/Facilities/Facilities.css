@@ -1,55 +1,60 @@
 .container-facilities {
-    width: 80%;
-    padding: 2rem 0;
-    margin: auto;
-    overflow-x: hidden;
-  }
-  .container-facilities .wrapper {
-    border: 3px solid var(--primary-color);
-    border-radius: 30px;
-  }
+  width: 80%;
+  padding: 2rem 0;
+  margin: auto;
+  overflow-x: hidden;
+}
 
-  .container-facilities .title {
-    color: var(--primary-color);
-    text-align: center;
-    margin: 2rem;
-    cursor: default;
-  }
+.container-facilities .wrapper {
+  border: 1px solid var(--primary-color);
+  border-radius: 20px;
+}
 
-
-  /* start style icons */
-  .container-facilities .facility-icons {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin: 2rem;
-  }
-  .container-facilities .facility-icons .icons {
-    margin: 0.5rem;
-    padding: 0.5rem;
-  }
-  .container-facilities .facility-icons .icon {
-    width: 5rem;
-    height: auto;
-    padding: 1rem;
-
-    box-shadow: 1px 3px 3px var(--desc-color);
-    border-radius: 20px;
-
-    color: var(--primary-color);
-    background-color: #ECF6FF;
-
-    cursor: pointer;
-  }
-  .container-facilities .facility-icons .icon:hover {
-    transition: ease-in 0.2s;
-    color: white;
-    background-color: var(--primary-color);
-  }
-  /* end style icons */
+.container-facilities .title {
+  color: var(--primary-color);
+  text-align: center;
+  margin: 2rem;
+  cursor: default;
+}
 
 
-  /* desc style */
-  .container-facilities .desc{
-    cursor: default;
-  }
+/* start style icons */
+.container-facilities .facility-icons {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 2rem;
+}
+
+.container-facilities .facility-icons .icons {
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.container-facilities .facility-icons .icon {
+  width: 5rem;
+  height: auto;
+  padding: 1rem;
+
+  box-shadow: 1px 3px 3px var(--desc-color);
+  border-radius: 20px;
+
+  color: var(--primary-color);
+  background-color: #ECF6FF;
+
+  cursor: pointer;
+}
+
+.container-facilities .facility-icons .icon:hover {
+  transition: ease-in 0.2s;
+  color: white;
+  background-color: var(--primary-color);
+}
+
+/* end style icons */
+
+
+/* desc style */
+.container-facilities .desc {
+  cursor: default;
+}

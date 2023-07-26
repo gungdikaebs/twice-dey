@@ -16,8 +16,8 @@
   height: 100%;
   border-radius: 30px;
   box-shadow: 1px 3px 3px var(--desc-color);
-  /* cursor: pointer; */
 }
+
 .container-mostpicked .mostpicked-images .container-description {
   position: absolute;
   top: 50%;
@@ -26,9 +26,9 @@
   border-radius: 0 0 30px 30px;
   font-size: 1rem;
   background-color: #E1E1E1;
-
-  /* display: none; */
+  display: none;
 }
+
 .container-description .description {
   margin: 1.5rem;
   cursor: default;

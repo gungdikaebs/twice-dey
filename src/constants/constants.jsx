@@ -1,5 +1,5 @@
 export const MostPickedData = [
-    {
+  {
     title: "Bali, Canggu",
     description: "Private villa with private pool",
     image: "./images/mostpicked_img.png",
@@ -7,8 +7,8 @@ export const MostPickedData = [
     star: "",
     wishlist: "",
     id: 0,
-},
-{
+  },
+  {
     title: "Bali, Canggu",
     description: "Private villa with private pool",
     image: "./images/mostpicked_img.png",
@@ -16,8 +16,8 @@ export const MostPickedData = [
     star: "",
     wishlist: "",
     id: 1,
-},
-{
+  },
+  {
     title: "Bali, Canggu",
     description: "Private villa with private pool",
     image: "./images/mostpicked_img.png",
@@ -25,8 +25,8 @@ export const MostPickedData = [
     star: "",
     wishlist: "",
     id: 2,
-},
-{
+  },
+  {
     title: "Bali, Canggu",
     description: "Private villa with private pool",
     image: "./images/mostpicked_img.png",
@@ -34,8 +34,8 @@ export const MostPickedData = [
     star: "",
     wishlist: "",
     id: 3,
-},
-{
+  },
+  {
     title: "Bali, Canggu",
     description: "Private villa with private pool",
     image: "./images/mostpicked_img.png",
@@ -43,8 +43,8 @@ export const MostPickedData = [
     star: "",
     wishlist: "",
     id: 4,
-},
-{
+  },
+  {
     title: "Bali, Canggu",
     description: "Private villa with private pool",
     image: "./images/mostpicked_img.png",
@@ -52,24 +52,28 @@ export const MostPickedData = [
     star: "",
     wishlist: "",
     id: 5,
-}
+  },
 ];
 
 export const RecommendImages = [
-    {
-        image: "./images/recommend-img.png",
-        id: 0
-    },
-    {
-        image: "./images/recommend-img.png",
-        id: 1
-    },
-    {
-        image: "./images/recommend-img.png",
-        id: 2
-    },
-    {
-        image: "./images/recommend-img.png",
-        id: 3
-    }
-]
+  {
+    title: "Bali, Canggu",
+    image: "./images/recommend-img.png",
+    id: 0,
+  },
+  {
+    title: "Bali, Canggu",
+    image: "./images/recommend-img.png",
+    id: 1,
+  },
+  {
+    title: "Bali, Canggu",
+    image: "./images/recommend-img.png",
+    id: 2,
+  },
+  {
+    title: "Bali, Canggu",
+    image: "./images/recommend-img.png",
+    id: 3,
+  },
+];
