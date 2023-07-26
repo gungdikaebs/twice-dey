@@ -46,4 +46,10 @@
     height: 40%;
     color: var(--primary-color);
     cursor: pointer;
+    transition: 0.3s ease;
+
+}
+.container-hero .left .hero-icons .icon:hover{
+   height: 45%;
+   transition: 0.3s ease;
 }

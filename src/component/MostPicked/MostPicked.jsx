@@ -18,13 +18,13 @@ const MostPicked = () => {
       <div className="container-mostpicked">
         <h3 className="title">Most Picked</h3>
         <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          modules={[Navigation, A11y]}
           spaceBetween={50}
           slidesPerView={3}
           navigation
           loop={true}
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
+          // pagination={{ clickable: true }}
+          // scrollbar={{ draggable: true }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}>
           <div className="content">

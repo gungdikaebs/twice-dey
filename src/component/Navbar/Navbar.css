@@ -41,11 +41,23 @@
     color: black;
     margin: auto;
     border: none;
-    transition: 2s ease-in;
+    transition: 2s ease;
 }
 
-.container-navbar .content .right .text a:hover {
-    border-bottom: 1px solid;
+.container-navbar .content .right .text a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    /* transform-origin: left; */
+    transition: transform 0.3s ease;
+    border-radius: 0.5rem;
+}
+
+.container-navbar .content .right .text a:hover::after {
+    transform: scaleX(1);
 }
 
 .container-navbar .content .profiles {
@@ -58,4 +70,10 @@
     border-radius: 50px;
     padding: 8px 8px;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.container-navbar .content .profiles:hover {
+    background-color: var(--button-color);
+    transition: 0.3s ease;
 }
