@@ -8,13 +8,22 @@ import { BiChevronLeftCircle, BiChevronRightCircle } from "react-icons/bi";
 // Import Swiper styles
 import "swiper/css";
 
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
 const MostPicked = () => {
   return (
     <section className="mostpicked">
       <div className="container-mostpicked">
         <h3 className="title">Most Picked</h3>
 
-        <Swiper {...sliderSettings}>
+        <Swiper
+          {...sliderSettings}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, Pagination, Navigation]}
+        >
           <SliderButtons />
           <div className="content">
             {MostPickedData.map(
