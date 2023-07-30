@@ -8,9 +8,13 @@ import { sliderSettings } from "./sliderSettings";
 import "swiper/css";
 import "swiper/css/pagination";
 
+// import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const MostPicked = () => {
+  const pagination = {
+    clickable: true,
+  };
   return (
     <section className="mostpicked">
       <div className="container-mostpicked">
@@ -22,6 +26,7 @@ const MostPicked = () => {
             delay: 2500,
             disableOnInteraction: false,
           }}
+          pagination={pagination}
           modules={[Autoplay, Pagination, Navigation]}>
           <div className="content">
             {MostPickedData.map(

@@ -37,6 +37,6 @@
 }
 
 .swiper-pagination {
-  position: relative;
+  position: relative !important;
 
 }
