@@ -1,12 +1,12 @@
 import React from "react";
 import "./MostPicked.css";
 import { MostPickedData } from "../../constants/constants";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { sliderSettings } from "./sliderSettings";
-import { BiChevronLeftCircle, BiChevronRightCircle } from "react-icons/bi";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/pagination";
 
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
@@ -22,9 +22,7 @@ const MostPicked = () => {
             delay: 2500,
             disableOnInteraction: false,
           }}
-          modules={[Autoplay, Pagination, Navigation]}
-        >
-          <SliderButtons />
+          modules={[Autoplay, Pagination, Navigation]}>
           <div className="content">
             {MostPickedData.map(
               ({ id, title, description, image, price, star, wishlist }) => (
@@ -32,8 +30,7 @@ const MostPicked = () => {
                   <div
                     className="mostpicked-images"
                     id="mostPickedHover"
-                    key={id}
-                  >
+                    key={id}>
                     <img className="image" src={image} alt="img" />
                     <div className="container-description">
                       <div className="description">
@@ -55,17 +52,3 @@ const MostPicked = () => {
 };
 
 export default MostPicked;
-
-const SliderButtons = function () {
-  const swiper = useSwiper();
-  return (
-    <div className="sliderButtons">
-      <button onClick={() => swiper.slidePrev()}>
-        <BiChevronLeftCircle />
-      </button>
-      <button onClick={() => swiper.slideNext()}>
-        <BiChevronRightCircle />
-      </button>
-    </div>
-  );
-};

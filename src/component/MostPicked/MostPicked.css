@@ -36,23 +36,7 @@
   cursor: default;
 }
 
-.sliderButtons {
-  display: flex;
-  justify-content: space-between;
-  /* border: 1px solid; */
-}
+.swiper-pagination {
+  position: relative;
 
-.sliderButtons button {
-  cursor: pointer;
-  font-size: 2rem;
-  padding: 0 0.5rem;
-  background-color: transparent;
-}
-
-.sliderButtons > :nth-child(1) {
-  border: none;
-}
-
-.sliderButtons > :nth-child(2) {
-  border: none;
 }
