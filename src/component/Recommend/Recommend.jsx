@@ -39,7 +39,9 @@ const Recommend = () => {
             ))}
           </div>
         </div>
-        <button className="button">more</button>
+        <div className="more-button">
+          <button className="button">More</button>
+        </div>
       </div>
     </section>
   );

@@ -55,7 +55,8 @@
 }
 
 .wrapper-body {
-  display: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .wrapper-body .content {
@@ -64,6 +65,8 @@
   gap: 5rem;
 }
 
-.container-recommend .button {
-  float: right;
+.container-recommend .more-button {
+  width: 100%;
+  display: flex;
+  justify-content: end;
 }

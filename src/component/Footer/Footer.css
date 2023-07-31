@@ -1,0 +1,25 @@
+.container-footer {
+    width: 100%;
+    padding: 2rem 0;
+    margin: auto;
+    border: 1px solid;
+  }
+
+  .container-footer .wrapper-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 3rem 2rem 3rem;
+  }
+
+  .wrapper-top .column1,
+  .wrapper-top .column3 {
+    width: 25rem;
+  }
+  .wrapper-top .column2 {
+    width: 15rem;
+  }
+
+  .column3 .input-email .email,
+  .column3 .subscribe-button .button {
+    width: 90%;
+  }
