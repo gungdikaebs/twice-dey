@@ -1,25 +1,83 @@
 .container-footer {
-    width: 100%;
-    padding: 2rem 0;
-    margin: auto;
-    border: 1px solid;
-  }
+  width: 100%;
+  padding: 2rem 0;
+  margin: auto;
+  background-color: #bbd6df;
+}
 
-  .container-footer .wrapper-top {
-    display: flex;
-    justify-content: space-between;
-    margin: 4rem 3rem 2rem 3rem;
-  }
+.container-footer .wrapper-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 6rem 5rem 2rem 5rem;
+}
 
-  .wrapper-top .column1,
-  .wrapper-top .column3 {
-    width: 25rem;
-  }
-  .wrapper-top .column2 {
-    width: 15rem;
-  }
+.wrapper-top .column1 {
+  width: 25rem;
+}
+.wrapper-top .column2 {
+  width: 15rem;
+}
+.wrapper-top .column3 {
+  width: 20rem;
+}
 
-  .column3 .input-email .email,
-  .column3 .subscribe-button .button {
-    width: 90%;
-  }
+.column3 .input-email .email,
+.column3 .subscribe-button .button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.column1 .title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.column1 .title span {
+  color: var(--primary-color);
+}
+
+.column1 .description p {
+  font-size: 14px;
+  text-align: justify;
+  margin-bottom: 5rem;
+}
+
+.column2 .title h2 {
+  font-size: 1.1rem;
+  padding-bottom: 1rem;
+}
+
+.column2 .description a {
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  border: none;
+  line-height: 1.6;
+}
+
+.column3 .title h2 {
+  font-size: 1.35rem;
+  margin-bottom: 2rem;
+}
+
+.column3 .input-email input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 3px solid black;
+  font-size: 20px;
+}
+.column3 .input-email input:focus {
+  outline-style: none;
+}
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+}
+.social-media .icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+}

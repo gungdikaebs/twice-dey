@@ -1,5 +1,12 @@
 import React from "react";
 import "./Footer.css";
+import {
+  BiPhoneCall,
+  BiLogoInstagram,
+  BiLogoTwitter,
+  BiLogoFacebook,
+  BiLogoGmail,
+} from "react-icons/bi";
 
 const Footer = () => {
   return (
@@ -8,7 +15,9 @@ const Footer = () => {
         <div className="wrapper-top">
           <div className="column1">
             <div className="title">
-              <h2>TWICE DEY</h2>
+              <h2>
+                TWICE <span>DEY</span>
+              </h2>
             </div>
             <div className="description">
               <p>
@@ -17,17 +26,54 @@ const Footer = () => {
                 Reservations in the Palm of Your Hand
               </p>
             </div>
+            <div className="social-media">
+              <div className="call icon">
+                <a href="">
+                  <BiPhoneCall />
+                </a>
+              </div>
+              <div className="instagram icon">
+                <a href="">
+                  <BiLogoInstagram />
+                </a>
+              </div>
+              <div className="twitter icon">
+                <a href="">
+                  <BiLogoTwitter />
+                </a>
+              </div>
+              <div className="facebook icon">
+                <a href="">
+                  <BiLogoFacebook />
+                </a>
+              </div>
+              <div className="email icon">
+                <a href="">
+                  <BiLogoGmail />
+                </a>
+              </div>
+            </div>
           </div>
           <div className="column2">
             <div className="title">
               <h2>Popular Location</h2>
             </div>
             <div className="description">
-              <p>Kuta, Badung</p>
-              <p>Sanur, Denpasar</p>
-              <p>Jimbaran, Badung</p>
-              <p>Canggu, Badung</p>
-              <p>Ubud, Gianyar</p>
+              <a href="">
+                <p>Kuta, Badung</p>
+              </a>
+              <a href="">
+                <p>Sanur, Denpasar</p>
+              </a>
+              <a href="">
+                <p>Jimbaran, Badung</p>
+              </a>
+              <a href="">
+                <p>Canggu, Badung</p>
+              </a>
+              <a href="">
+                <p>Ubud, Gianyar</p>
+              </a>
             </div>
           </div>
           <div className="column3">
@@ -42,9 +88,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="wrapper-bottom">
-          <p>test</p>
-        </div>
+        <div className="wrapper-bottom"></div>
       </div>
     </section>
   );
