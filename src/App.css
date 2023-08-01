@@ -30,8 +30,9 @@ body {
     cursor: pointer;
     transition: all 0.3s;
 }
+
 .button:hover {
-    color:white;
+    color: white;
     /* background-color: #0827a1; */
     background-color: var(--primary-color);
     /* color: rgb(185, 185, 185);
@@ -41,4 +42,3 @@ body {
     transition: ease-in 0.3s;
 
 }
-
