@@ -1,5 +1,5 @@
 import React from "react";
-import "./Recommend.css";
+import "./Gallery.css";
 import { RecommendImages } from "../../constants/constants";
 import { BiSearch } from "react-icons/bi";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,18 +7,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-// import "swiper/css/pagination";
-// import "swiper/css/scrollbar";
-
-// import required modules
 import { Navigation } from "swiper/modules";
 
-const Recommend = () => {
+const Gallery = () => {
   return (
-    <section id="recommend" className="recommend">
+    <section className="recommend">
       <div className="container-recommend">
         <div className="wrapper-head">
-          <h2 className="title">Recommendation</h2>
+          <h2 className="title">
+            TWICE <span>DEY</span>
+          </h2>
           <div className="search-bar">
             <input
               className="input-search"
@@ -30,25 +28,30 @@ const Recommend = () => {
             </button>
           </div>
         </div>
+        <div className="wrapper-destination">
+          <div className="search-bar">
+            <input
+              className="input-search"
+              type="text"
+              placeholder="Kuta, Badung"
+            />
+            <button className="button-search" type="submit">
+              <BiSearch className="icon" />
+            </button>
+          </div>
+        </div>
         <div className="wrapper-body">
-          <div className="content">
+          <div className="gallery">
             {RecommendImages.map(({ id, image }) => (
               <div className="images" id="" key={id}>
-                <img className="recommend-image" src={image} alt="img" />
+                <img className="gallery-image" src={image} alt="img" />
               </div>
             ))}
           </div>
-        </div>
-        <div className="more-button">
-          <form action="">
-            <button formaction="/Recommendation" className="button">
-              More
-            </button>
-          </form>
         </div>
       </div>
     </section>
   );
 };
 
-export default Recommend;
+export default Gallery;

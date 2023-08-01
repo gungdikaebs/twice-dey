@@ -1,20 +1,17 @@
 import "./App.css";
-import Hero from "./component/Hero/Hero";
-import MostPicked from "./component/MostPicked/MostPicked";
-import Navbar from "./component/Navbar/Navbar";
-import Facilities from "./component/Facilities/Facilities";
-import Recommend from "./component/Recommend/Recommend";
-import Footer from "./component/Footer/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./views/Home";
+import Lodging from "./views/Lodging";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <MostPicked />
-      <Facilities />
-      <Recommend />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/Recommendation" element={<Lodging />} />
+        </Routes>
+      </Router>
     </>
   );
 }

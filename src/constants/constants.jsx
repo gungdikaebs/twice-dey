@@ -76,4 +76,24 @@ export const RecommendImages = [
     image: "./images/recommend-img.png",
     id: 3,
   },
+  {
+    title: "Bali, Canggu",
+    image: "./images/recommend-img.png",
+    id: 4,
+  },
+  {
+    title: "Bali, Canggu",
+    image: "./images/recommend-img.png",
+    id: 5,
+  },
+  {
+    title: "Bali, Canggu",
+    image: "./images/recommend-img.png",
+    id: 6,
+  },
+  {
+    title: "Bali, Canggu",
+    image: "./images/recommend-img.png",
+    id: 7,
+  },
 ];
