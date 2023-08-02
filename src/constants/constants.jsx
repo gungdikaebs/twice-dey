@@ -57,42 +57,42 @@ export const MostPickedData = [
 
 export const RecommendImages = [
   {
-    title: "Bali, Canggu",
+    title: "Canggu",
     image: "./images/recommend-img.png",
     id: 0,
   },
   {
-    title: "Bali, Canggu",
+    title: "Kuta",
     image: "./images/recommend-img.png",
     id: 1,
   },
   {
-    title: "Bali, Canggu",
+    title: "",
     image: "./images/recommend-img.png",
     id: 2,
   },
   {
-    title: "Bali, Canggu",
+    title: "",
     image: "./images/recommend-img.png",
     id: 3,
   },
   {
-    title: "Bali, Canggu",
+    title: "",
     image: "./images/recommend-img.png",
     id: 4,
   },
   {
-    title: "Bali, Canggu",
+    title: "",
     image: "./images/recommend-img.png",
     id: 5,
   },
   {
-    title: "Bali, Canggu",
+    title: "",
     image: "./images/recommend-img.png",
     id: 6,
   },
   {
-    title: "Bali, Canggu",
+    title: "",
     image: "./images/recommend-img.png",
     id: 7,
   },
