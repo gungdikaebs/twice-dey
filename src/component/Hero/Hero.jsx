@@ -13,7 +13,11 @@ const Hero = () => {
             We provide what you need to enjoy your holiday with family time to
             make another memorable moments.
           </p>
-          <button className="button">Show Me Now</button>
+          <form action="">
+            <button formaction="./Recommendation" className="button">
+              Show Me Now
+            </button>
+          </form>
           <div className="hero-icons">
             <div className="icons">
               <BiUserPin className="icon" />

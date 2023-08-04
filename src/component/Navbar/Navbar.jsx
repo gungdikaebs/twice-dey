@@ -12,9 +12,9 @@ const Navbar = () => {
           </div>
           <div className="right">
             <div className="text">
-              <a href="">Home</a>
-              <a href="">Recommend</a>
-              <a href="">Stories</a>
+              <a href="./">Home</a>
+              <a href="#facilities">Facilities</a>
+              <a href="#recommend">Recommend</a>
             </div>
             <div className="profiles">
               <BiUser
