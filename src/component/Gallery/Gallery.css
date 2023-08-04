@@ -10,8 +10,11 @@
   justify-content: space-between;
   margin-bottom: 3rem;
 }
-
-.container-gallery .wrapper-head .title span {
+.container-gallery .wrapper-head .title a {
+  color: black;
+  text-decoration: none;
+}
+.container-gallery .wrapper-head .title a span {
   color: var(--primary-color);
 }
 

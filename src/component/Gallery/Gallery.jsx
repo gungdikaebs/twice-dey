@@ -1,33 +1,35 @@
 import React, { useState } from "react";
 import "./Gallery.css";
 import { RecommendImages } from "../../constants/constants";
-import { BiSearch, BiHeart } from "react-icons/bi";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import { Navigation } from "swiper/modules";
+import { BiSearch } from "react-icons/bi";
 
 const Gallery = () => {
   const [searchQuery, setSearchQuery] = useState(""); // State untuk menyimpan nilai input pencarian
 
   // Fungsi untuk mengupdate state ketika nilai input berubah
   const handleChange = (event) => {
-    setSearchQuery(event.target.value);
+    setSearchQuery(event.target.value.toLowerCase());
   };
 
-  // Fungsi untuk mendapatkan gambar berdasarkan query pencarian
+  // Fungsi untuk menampilkan gambar berdasarkan pencarian dan filter kategori
   const getFilteredImages = () => {
-    const trimmedQuery = searchQuery.trim().toLowerCase();
-    if (trimmedQuery === "") {
-      return RecommendImages; // Jika pencarian kosong, tampilkan semua isi dari RecommendImages
-    } else {
-      // Jika ada pencarian, filter gambar berdasarkan judul (title)
-      return RecommendImages.filter((image) =>
-        image.title.toLowerCase().includes(trimmedQuery)
-      );
+    const trimmedQuery = searchQuery.trim();
+
+    if (!trimmedQuery) {
+      return RecommendImages; // Jika tidak ada query, tampilkan semua gambar
     }
+
+    const filteredImages = RecommendImages.filter((image) => {
+      const lowerCasedTitle = image.title.toLowerCase();
+      const lowerCasedCategory = image.categories.toLowerCase();
+
+      return (
+        lowerCasedTitle.includes(trimmedQuery) ||
+        lowerCasedCategory.includes(trimmedQuery)
+      );
+    });
+
+    return filteredImages;
   };
 
   return (
@@ -35,7 +37,9 @@ const Gallery = () => {
       <div className="container-gallery">
         <div className="wrapper-head">
           <h2 className="title">
-            TWICE <span>DEY</span>
+            <a href="../">
+              TWICE <span>DEY</span>
+            </a>
           </h2>
           <div className="search-bar">
             <input
@@ -53,11 +57,8 @@ const Gallery = () => {
 
         <div className="wrapper-body">
           <div className="gallery">
-            {getFilteredImages().map(({ id, image }) => (
+            {getFilteredImages().map(({ id, image, title }) => (
               <div className="images" id="" key={id}>
-                <div className="favorite-icon">
-                  <BiHeart className="icon" />
-                </div>
                 <img className="gallery-image" src={image} alt="img" />
               </div>
             ))}
