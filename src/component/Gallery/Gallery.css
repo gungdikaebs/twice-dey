@@ -57,6 +57,7 @@
 }
 
 .wrapper-body {
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -67,4 +68,16 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 5rem;
+}
+.wrapper-body .gallery .images {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.wrapper-body .gallery .images .favorite-icon {
+  position: absolute;
+  font-size: 2rem;
+  color: white;
+  top: 40px;
+  right: 15px;
 }

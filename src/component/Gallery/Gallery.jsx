@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Gallery.css";
 import { RecommendImages } from "../../constants/constants";
-import { BiSearch } from "react-icons/bi";
+import { BiSearch, BiHeart } from "react-icons/bi";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -55,6 +55,9 @@ const Gallery = () => {
           <div className="gallery">
             {getFilteredImages().map(({ id, image }) => (
               <div className="images" id="" key={id}>
+                <div className="favorite-icon">
+                  <BiHeart className="icon" />
+                </div>
                 <img className="gallery-image" src={image} alt="img" />
               </div>
             ))}
