@@ -73,6 +73,11 @@
     transition: 0.3s ease;
 }
 
+.container-navbar .content .profiles .profile {
+    font-size: 1.5rem;
+    color: white;
+}
+
 .container-navbar .content .profiles:hover {
     background-color: var(--button-color);
     transition: 0.3s ease;
