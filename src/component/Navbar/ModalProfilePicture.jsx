@@ -35,8 +35,8 @@ const ModalProfilePicture = ({ isOpen, onClose }) => {
           </div>
         </div>
         <div className="button-container">
-          <button className="edit-profile-button">Edit Profile</button>
-          <button className="other-button">Other Button</button>
+          <button className="edit-profile-button button">Edit Profile</button>
+          <button className="other-button button">Other Button</button>
         </div>
         <button className="close-button" onClick={onClose}>
           Close

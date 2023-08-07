@@ -22,21 +22,24 @@
 
 .modal-content h2 {
     margin-bottom: 20px;
+    color: var(--primary-color);
 }
 
 .profile-info {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
 .profile-icon {
     font-size: 40px;
-    margin-right: 10px;
+    margin: 4px;
+    transition: 0.3s ease;
 }
 
 .profile-details {
-    flex: 1;
+    flex: 3;
 }
 
 .profile-details p {
@@ -53,7 +56,6 @@
 .other-button {
     padding: 10px 20px;
     border: none;
-    background-color: #007bff;
     color: #fff;
     border-radius: 3px;
     cursor: pointer;
@@ -66,6 +68,14 @@
     color: #fff;
     border-radius: 3px;
     cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 10px var(--desc-color);
+}
+
+.close-button:hover{
+    background-color: #b60101;
+    box-shadow: 1px 1px 8px var(--desc-color);
+    transition: ease-in 0.3s;
 }
 
 /* Tambahkan style untuk input file */
@@ -79,11 +89,13 @@ input[type="file"] {
     align-items: center;
     cursor: pointer;
     border: 1px solid #ddd;
-    padding: 5px;
+    padding: 2px;
     border-radius: 50%;
     overflow: hidden;
+    margin:0px 15px;
+    transition: 0.3s ease;
 }
 
 .profile-picture:hover {
-    background-color: #f7f7f7;
+    background-color:#f3f3f3;
 }
