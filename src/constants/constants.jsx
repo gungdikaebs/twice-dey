@@ -104,4 +104,52 @@ export const RecommendImages = [
     categories: "gunung",
     id: 7,
   },
+  {
+    title: "Canggu",
+    image: "./images/mostpicked_img.png",
+    categories: "",
+    id: 8,
+  },
+  {
+    title: "Kuta",
+    image: "./images/recommend-img.png",
+    categories: "gunung",
+    id: 9,
+  },
+  {
+    title: "",
+    image: "./images/recommend-img.png",
+    categories: "gunung",
+    id: 10,
+  },
+  {
+    title: "",
+    image: "./images/recommend-img.png",
+    categories: "gunung",
+    id: 11,
+  },
+  {
+    title: "",
+    image: "./images/recommend-img.png",
+    categories: "gunung",
+    id: 12,
+  },
+  {
+    title: "",
+    image: "./images/recommend-img.png",
+    categories: "gunung",
+    id: 13,
+  },
+  {
+    title: "",
+    image: "./images/recommend-img.png",
+    categories: "gunung",
+    id: 14,
+  },
+  {
+    title: "",
+    image: "./images/recommend-img.png",
+    categories: "gunung",
+    id: 15,
+  },
 ];

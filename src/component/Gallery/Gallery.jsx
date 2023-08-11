@@ -1,16 +1,26 @@
-import React, { useState } from "react";
+import React, { useRef, useState, useMemo } from "react";
 import "./Gallery.css";
 import { RecommendImages } from "../../constants/constants";
 import { BiSearch } from "react-icons/bi";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Pagination from "./GalleryPage/Pagination";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/grid";
 import "swiper/css/pagination";
 
-import { Pagination } from "swiper/modules";
+let PageSize = 8;
 
 const Gallery = () => {
+  // Pagination
+  const [currentPage, setCurrentPage] = useState(1);
+  const currentTableData = useMemo(() => {
+    const firstPageIndex = (currentPage - 1) * PageSize;
+    const lastPageIndex = firstPageIndex + PageSize;
+    return RecommendImages.slice(firstPageIndex, lastPageIndex);
+  }, [currentPage]);
+  // tutup pagination
+
   const [searchQuery, setSearchQuery] = useState("");
 
   // Fungsi untuk mengupdate state ketika nilai input berubah
@@ -22,7 +32,7 @@ const Gallery = () => {
   const getFilteredImages = () => {
     const trimmedQuery = searchQuery.trim().toLowerCase();
     if (trimmedQuery === "") {
-      return RecommendImages;
+      return currentTableData;
     } else {
       // Jika ada pencarian, filter gambar berdasarkan judul (title)
       return RecommendImages.filter((image) =>
@@ -54,7 +64,6 @@ const Gallery = () => {
             </button>
           </div>
         </div>
-
         <div className="wrapper-body">
           <div className="gallery">
             {getFilteredImages().map(({ id, image }) => (
@@ -65,6 +74,13 @@ const Gallery = () => {
           </div>
         </div>
       </div>
+      <Pagination
+        className="pagination-bar"
+        currentPage={currentPage}
+        totalCount={RecommendImages.length}
+        pageSize={PageSize}
+        onPageChange={(page) => setCurrentPage(page)}
+      />
     </section>
   );
 };
