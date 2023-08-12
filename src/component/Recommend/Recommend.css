@@ -63,6 +63,11 @@
   overflow: hidden;
   gap: 5rem;
 }
+.wrapper-body .content .recommend-image {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 30px;
+}
 
 .container-recommend .more-button {
   width: 100%;
