@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
 
-let PageSize = 8;
+let PageSize = 16;
 
 const Gallery = () => {
   // Pagination
@@ -35,8 +35,10 @@ const Gallery = () => {
       return currentTableData;
     } else {
       // Jika ada pencarian, filter gambar berdasarkan judul (title)
-      return RecommendImages.filter((image) =>
-        image.title.toLowerCase().includes(trimmedQuery)
+      return RecommendImages.filter(
+        (image) =>
+          image.categories.toLowerCase().includes(trimmedQuery) ||
+          image.title.toLowerCase().includes(trimmedQuery)
       );
     }
   };

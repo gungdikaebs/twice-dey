@@ -73,6 +73,11 @@
   flex-wrap: wrap;
   gap: 5rem;
 }
+.wrapper-body .gallery .gallery-image {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 30px;
+}
 .wrapper-body .gallery .images {
   position: relative;
   padding: 2rem 0;
